@@ -4,7 +4,8 @@
 .changeunit
 {border-radius: 10px;
 color: rgb(240, 230, 240);
-background-color: rgb(146, 105, 105);
+background-color: rgba(21, 5, 5, 0.779);
+
 }
 body {
     font-family: 'Arial', sans-serif;
