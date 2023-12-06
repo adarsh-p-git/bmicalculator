@@ -42,16 +42,16 @@
         <div class="col-4"></div>
         <div class="col-4 bg-light rounded">   <h1 class="" style="color: rgb(52, 7, 7); text-shadow: 1px 2px 2px rgb(143, 97, 97);">BMI Calculator</h1>
             <label for="gender">Gender:</label>
-            <select id="gender" >
+            <select id="gender" class="form-control" >
                 <option value="Male">Male</option>
                 <option value="Female">Female</option>
             </select><br>
             <label for="age"></label>
             <input type="number" class="form-control" id="age" placeholder="Enter age" required>
     
-            <label for="height"></label>
+            <label for="height">height:</label>
             <div id="heightInput">
-                <input type="number" class="form-control" id="heightCm" placeholder="Enter height in cm" required>
+                <input type="number" class="form-control" id="heightCm" placeholder="cm" required>
                 <div id="heightFeetInch" style="display: none;">
                     <input type="number" class="form-control" id="heightFeet" placeholder="Feet">
                     <input type="number" class="form-control" id="heightInch" placeholder="Inches">

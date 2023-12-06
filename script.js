@@ -17,7 +17,7 @@ function toggleHeightUnit() {
         heightFeetInch.style.display = "flex";
         var label1=document.createElement('label')
         label1.textContent='Height:'
-        age.appendChild(label1)
+        document.getElementById('age').appendChild(label1)
         btn.textContent="Change unit to Cm"
         document.getElementById("heightFeet").value = ""; // Clear cm input
         document.getElementById("heightInch").value = ""; // Clear inches input
