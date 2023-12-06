@@ -5,14 +5,20 @@ function toggleHeightUnit() {
     
     var heightCmInput = document.getElementById("heightCm");
     var heightFeetInch = document.getElementById("heightFeetInch");
-
+    var btn=document.getElementById('changebtn')
+    var age=document.getElementById('age')
     if (heightUnitCm) {
         heightCmInput.style.display = "block";
         heightFeetInch.style.display = "none";
+        btn.textContent="Change unit to ft & In"
         heightCmInput.value = ""; // Clear feet and inches input
     } else {
         heightCmInput.style.display = "none";
         heightFeetInch.style.display = "flex";
+        var label1=document.createElement('label')
+        label1.textContent='Height:'
+        age.appendChild(label1)
+        btn.textContent="Change unit to Cm"
         document.getElementById("heightFeet").value = ""; // Clear cm input
         document.getElementById("heightInch").value = ""; // Clear inches input
     }
